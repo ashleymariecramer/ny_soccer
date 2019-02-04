@@ -1,0 +1,597 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Vanilla CSS Un-Reset */
+h1, h2, h3, h4, h5, h6, b, strong {
+    font-weight: bold;
+}
+
+em, i{
+    font-style: italic;
+}
+
+p{ margin:0 0 1.5em 0;
+}
+
+li ul, li ol {
+    margin:0 1.5em;
+}
+ul, ol {
+    margin:0 1.5em 1.5em 1.5em;
+}
+ul {
+    list-style-type:disc;
+}
+ol {
+    list-style-type:decimal;
+}
+ol ol {
+    list-style: upper-alpha;
+}
+ol ol ol {
+    list-style: lower-roman;
+}
+ol ol ol ol {
+    list-style: lower-alpha;
+}
+dl {
+    margin:0 0 1.5em 0;
+}
+dl dt {
+    font-weight:bold;
+}
+dd {
+    margin-left:1.5em;
+}
+table {
+    margin-bottom:1.4em;
+    width:100%;
+}
+th {
+    font-weight:bold;
+}
+th, td, caption {
+    padding:4px 10px 4px 5px;
+}
+
+
+/*Main CSS Styles*/
+body{
+    font-family: "Roboto";
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    font-size: 1em; 
+}
+
+.btn{
+    text-decoration: none;
+    color: white;  
+}
+
+.active{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    color: grey;
+}
+
+header{
+    display: flex;
+    align-items: baseline;
+    color: white;
+    flex-direction: row;
+    height: 10px;
+    align-items: center;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    padding: 3.5em 0em;
+}
+
+.logo{
+    max-height: 100px;
+    min-width: 100px;
+    flex-basis: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+h1{ 
+    flex: 1 1 600px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.5em;
+    padding-right: 1em;
+}
+
+.background{
+    background: url("images/design1_image1.jpeg") no-repeat;
+    background-size: cover;
+    padding-top: 150px;
+    background-attachment: fixed;
+}
+
+/* keeps the h1, h2 and section centered*/
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+h2{
+    color: black;
+    background: rgba(255,255,255, 0.55);
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    padding: 10px;
+}
+
+h3{
+    font-size: 1.4em;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-size: 1.4em;
+    display: inline-block;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+p{
+    padding: 10px;
+}
+
+section{
+    background-color: rgba(0,0,0,.6);
+    width: 70%;
+    text-align: left;
+    padding: 40px 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.indent{
+    padding-left: 2em; 
+}
+
+.gallery{
+    display: flex;
+    background-color: rgba(0,0,0,.6);
+    flex-direction: column;
+}
+
+.row1{
+    display: flex;
+    height: 18em;
+    padding: 10px 5px 0px 5px;
+}
+
+.row2{
+    display: flex;
+    height: 15em;
+    padding: 10px 5px 0px 5px;
+}
+
+.photo{
+    margin: 0px 5px 0px 5px;
+}
+
+.photo1{
+    background: url("images/design2_image1.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 20%;
+    width: 60%;
+}
+
+.photo2{
+    background: url("images/soccer_image2.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 20%;
+    width: 40%;
+}
+
+.photo3{
+    background: url("images/soccer_image3.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 50%;
+    width: 20%;
+}
+
+.photo4{
+    background: url("images/KidsSoccerCamp.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 0%;
+    width: 60%;
+}
+
+.photo5{
+    background: url("images/soccer_image1.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 30%;
+    width: 20%;
+}
+
+footer{
+    background: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0.5em 3em;
+    height: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+.email{
+    color: greenyellow;
+}
+
+ul{
+    list-style-type: square;
+}
+
+.alpha{
+    list-style-type: lower-alpha;
+}
+
+.circle{
+    list-style-type: circle;
+}
+
+li{
+    padding-bottom: 12px;
+}
+
+.contact{
+    display: flex; 
+    justify-content: space-between;
+}
+
+table{
+    font-size: 1em;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+}
+
+th{
+    padding: .1em .5em;
+}
+
+
+td{
+    padding: 0.5em 0.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* change background color for each second pair of rows */
+tr:nth-child(4n), tr:nth-child(4n-1) {
+    background: rgba(255,255,255, 0.3);
+}
+
+/* change background color for alternate rows */
+.locations tr:nth-child(even){
+    background: rgba(255,255,255, 0.3);
+}
+
+.locations tr:nth-child(odd){
+    background: none;
+}
+
+thead{
+    background: white;
+    color: black;
+}
+
+.map{
+    padding-bottom: 30px;
+}
+
+.month{
+    width: 6em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+}
+
+fieldset{
+    padding: 10px;
+    margin: 10px;
+    border: 2px white solid;
+}
+
+.formRow{
+    padding: 10px 0px;
+    display: flex;
+    width: 100%;
+}
+
+.formCol{
+    display: flex;
+    width: 50%;
+}
+
+.formCol2{
+    display: flex;
+    width: 30%;
+}
+
+.formCol1{
+    display: flex;
+    width: 70%;
+}
+
+
+.twoCols{
+    display: flex;
+}
+
+.col{
+    width: 50%;
+}
+
+.row{
+    display: flex;
+}
+
+.spaceBelow{
+    margin-bottom: 5px;
+}   
+
+label{
+    background-color: rgba(255,255,255,0.6);
+    padding: 5px 0px;
+    color: black;
+    font-weight: 600;
+}
+
+.label{
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.labelWidth{
+    width: 50%
+}
+
+.formRow label{
+    width: 20%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.formCol label{
+    width: 40%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.formCol1 label{
+    width: 40%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.formCol2 label{
+    width: 20%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.formRow input[type=text]{
+    width: 80%;
+}
+
+.formCol input[type=text]{
+    width: 60%;
+}
+
+.formCol1 input[type=text]{
+    width: 60%;
+}
+
+.formCol2 input[type=date]{
+    width: 80%;
+}
+
+input[type=date]{
+    width: 60%;
+}
+
+input[id=signature]{
+    width: 60%;
+}
+
+input[type=email]{
+    width: 70%;
+}
+
+input[type=submit]{
+    width: 15%;
+    margin: auto;
+}
+
+legend{
+    margin-left: 10px;   
+    padding: 2px 10px;
+}
+
+.options{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    margin-left: 4px;
+}
+
+.grades{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.radio{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-weight: 200;
+    max-width: 50px;
+}
+
+.check]{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    margin-left: 4px;
+}
+
+.btnSubmit{
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    border: 5px grey solid;
+    
+}
+
+form p{
+    line-height: 1.3em;
+}
+
+input[type=radio]{
+    margin-left: 10px;
+}
+
+
+input[type=checkbox]{
+    padding-right: 20px;
+}
+
+select{
+    margin-top: -2px;
+}
+
+/* Media Queries */
+
+/* Applies to less than pc */
+@media screen and (max-width: 700px) {
+    h1{ font-size: 2em; }
+    h2{ font-size: 1.8em; }
+    h3{ font-size: 1.4em; }
+    h4{ font-size: 1.2em;}
+    .photo3{ width: 30%; }
+    .photo4{ width: 40%; }
+    .photo5{ width: 30%; }
+    table{ font-size: 0.8em;}
+    section{ width: 80%; }
+    table{ width: 100%; }
+    table{ padding: 0px; }
+    form{ font-size: .9em; }
+    .grades { flex-direction: column;}
+    .grades { align-items: flex-start;}
+    .row{ display: block; } 
+    select{ margin-top: 3px; }
+    .twoCols{ display: block; }
+    .col{ width: 100%; }
+    .row{ padding-bottom: 20px;}
+    .formCol{ width: 100%; }
+    .btnSubmit{ font-size: 0.8em; } 
+    .btnSubmit{ text-align: center; }
+    .btnSubmit{ border: 3px grey solid;}   
+    .formCol1 { width: 100%; }
+    .formCol2 { width: 100%; }
+    .formCol1 input[type=text]{ width: 70%; }
+    .formCol2 input[type=date]{ width: 70%; }
+    .formCol1 label{ width: 30%; }
+    .formCol2 label{ width: 30%; }
+}
+
+
+/* On tablets */
+@media screen and (min-width: 501px) and (max-width: 700px) {
+    .gallery{ margin: 20px 0px; }
+    .gallery{ padding-bottom: 10px; }
+}
+
+ 
+/* On smart phones*/
+@media screen and (max-width: 500px) {
+    .btn{ font-size: 0.8em; }
+    .gallery{ margin: 100px 0px; }
+    .gallery{ padding-bottom: 10px; }
+    section{ margin-bottom: 100px; }
+}
